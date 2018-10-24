@@ -6,11 +6,11 @@ import java.util.List;
 
 public class ComparatorNewWay {
 	public static void main(String[] args) {
-		Student s = new Student(1, "Amitabh", 31);
-		  Student s1 = new Student(2, "Abhishek", 24);
-		  Student s2 = new Student(3, "Ivaan", 1);
+		  Student s = new Student(1, "Amitabh", 31, "M");
+		  Student s1 = new Student(2, "Abhishek",25, "M");
+		  Student s2 = new Student(3, "Ivaan", 2, "M");
 		  
-		  ArrayList<Student> l = new ArrayList<Student>();
+		  ArrayList<Student> l = (ArrayList<Student>) StudentUtils.getStudentList();
 		  
 		  l.add(s);l.add(s1);l.add(s2);
 		  
